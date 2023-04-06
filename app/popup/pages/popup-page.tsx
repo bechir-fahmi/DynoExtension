@@ -56,7 +56,7 @@ const ApproveConnectionForm: React.FC<ApproveConnectionFormProps> = ({ origin, o
     <Card>
       <CardContent>
         <Typography variant="h6" component="h1" gutterBottom>
-          Allow this site to access your Solana account?
+          Allow this site to access your Dyno account?
         </Typography>
         <div className={classes.connection}>
           <Typography>{origin}</Typography>

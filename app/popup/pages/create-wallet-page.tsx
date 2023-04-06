@@ -86,7 +86,7 @@ const SeedWordsForm: React.FC<SeedWordsFormProps> = ({ mnemonicAndSeed, goForwar
         <Typography variant="h5" gutterBottom>
           Create New Wallet
         </Typography>
-        <Typography paragraph>Create a new wallet to hold Solana and SPL tokens.</Typography>
+        <Typography paragraph>Create a new wallet to hold Dyno and SPL tokens.</Typography>
         <Typography>
           Please write down the following twelve words and keep them in a safe place:
         </Typography>

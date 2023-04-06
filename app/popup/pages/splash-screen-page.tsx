@@ -24,7 +24,7 @@ const SplashScreenPageBase: React.FC = ({ children }) => {
       <AppBar className={classes.bar} position="static">
         <Toolbar>
           <Typography variant="h5" className={classes.title} component="h1">
-            Solana Wallet
+            Dyno Wallet
           </Typography>
         </Toolbar>
       </AppBar>

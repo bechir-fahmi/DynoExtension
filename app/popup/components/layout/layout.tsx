@@ -20,7 +20,7 @@ export const Layout: React.FC = ({ children }) => {
   return (
     <>
       <Helmet>
-        <title>{isNotification ? "Solana Notification" : "Solana Wallet"}</title>
+        <title>{isNotification ? "Dyno Notification" : "Dyno Wallet"}</title>
       </Helmet>
       <NavigationFrame />
       <main className={classes.content}>{children}</main>
