@@ -75,7 +75,7 @@ const ViewTransactionOnExplorerButton = (opts: { signature: TransactionSignature
       rel="noopener"
       href={`https://explorer.solana.com/tx/${signature}` + urlSuffix}
     >
-      View on Solana Explorer
+      View on Dyno Explorer
     </Button>
   )
 }

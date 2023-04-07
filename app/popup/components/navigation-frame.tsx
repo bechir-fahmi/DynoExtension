@@ -78,7 +78,7 @@ export const NavigationFrame: React.FC = () => {
       <AppBar className={classes.bar} position="sticky">
         <Toolbar>
           <Typography variant="h5" className={classes.title} component="h1">
-            Solana Wallet
+            Dyno Wallet
           </Typography>
           {!isNotification && popupState && popupState.walletState === "unlocked" && (
             <NetworkSelector

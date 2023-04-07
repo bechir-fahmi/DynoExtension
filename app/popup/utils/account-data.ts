@@ -48,7 +48,7 @@ export const getBalanceInfo = async (
         mintAddress: "Asdfasdf",
         decimals: 9,
         name: "",
-        symbol: "SOL",
+        symbol: "DYNO",
       },
     }
   }
