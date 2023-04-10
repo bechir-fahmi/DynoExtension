@@ -133,6 +133,7 @@ function createWebexRewire(params) {
       // we do not want any chunking when it comes to web extensions
       delete config.optimization.runtimeChunk
       delete config.optimization.splitChunks
+      config.optimization.minimize = false
 
       // initial HtmlWebpackPlugin for `index.html`
       config.plugins = replacePlugin(
