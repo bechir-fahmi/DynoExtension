@@ -54,7 +54,7 @@ export const SendSolDialog: React.FC<Props> = ({ open, onClose, fromPublicKey, b
 
   return (
     <DialogForm open={open} onClose={onClose} onSubmit={onSubmit}>
-      <DialogTitle>Send SOL</DialogTitle>
+      <DialogTitle>Send Dyno</DialogTitle>
       <DialogContent>
         <TextField
           label="Recipient Address"

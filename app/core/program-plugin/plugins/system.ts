@@ -56,7 +56,7 @@ export class SolanaPlugin implements ProgramPlugin {
     switch (decodedInstruction.instructionType) {
       case "Transfer":
         const amount = formatSolAmount(decodedInstruction.properties.amount)
-        content = `<p>Transfer: <b>${amount}</b> SOL <br/>from: <b><small>${decodedInstruction.properties.from}</small></b><br/>to <b><small>${decodedInstruction.properties.to}</small></b></p>`
+        content = `<p>Transfer: <b>${amount}</b> Dyno <br/>from: <b><small>${decodedInstruction.properties.from}</small></b><br/>to <b><small>${decodedInstruction.properties.to}</small></b></p>`
         break
       case "Create":
         content = `<p>Create account: <b>${decodedInstruction.properties.newAccount}</b><br/>Creator: <b>${decodedInstruction.properties.from}</b></p>`
@@ -77,7 +77,7 @@ export class SolanaPlugin implements ProgramPlugin {
     switch (decodedInstruction.instructionType) {
       case "Transfer":
         const amount = formatSolAmount(decodedInstruction.properties.amount)
-        content = `Transfer of '${amount} SOL' from ${decodedInstruction.properties.from} to ${decodedInstruction.properties.to}`
+        content = `Transfer of '${amount} Dyno' from ${decodedInstruction.properties.from} to ${decodedInstruction.properties.to}`
         break
       case "Create":
         content = `Create new account  ${decodedInstruction.properties.newAccount} (creator ${decodedInstruction.properties.from})</p>`

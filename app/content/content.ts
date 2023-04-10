@@ -56,10 +56,10 @@ async function setupStreams() {
   extensionMux.setMaxListeners(25)
 
   pump(pageMux, pageStream, pageMux, (err) =>
-    logStreamDisconnectWarning("Solana Inpage Multiplex", err)
+    logStreamDisconnectWarning("Dyno Inpage Multiplex", err)
   )
   pump(extensionMux, extensionStream, extensionMux, (err) =>
-    logStreamDisconnectWarning("Solana Background Multiplex", err)
+    logStreamDisconnectWarning("Dyno Background Multiplex", err)
   )
 
   // forward communication across inpage-background for these channels only
@@ -120,7 +120,7 @@ function shouldInjectProvider() {
  * @param {Error} err - Stream connection error
  */
 function logStreamDisconnectWarning(remoteLabel: string, err: Error) {
-  let warningMsg = `SolanaContentscript - lost connection to ${remoteLabel}`
+  let warningMsg = `DynoContentscript - lost connection to ${remoteLabel}`
   if (err) {
     warningMsg += "\n" + err.stack
   }

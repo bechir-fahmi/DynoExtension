@@ -76,7 +76,7 @@ function setupController(versionedData: VersionedData) {
 
   const persistData = async (data: StoredData): Promise<boolean> => {
     if (!data) {
-      throw new Error("Solana - updated state does not have data")
+      throw new Error("Dyno - updated state does not have data")
     }
     versionedData.data = data
 
